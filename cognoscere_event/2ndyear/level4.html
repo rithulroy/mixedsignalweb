@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cognoscere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Cognoscere</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../form.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <!--Main Page-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id ="main-section">
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="../../img/favicon.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!--<div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+           <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>-->
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in">MS Page</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/cognoscere_event/index.html">Event Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/events.html">Events</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/gallery.html">Gallery</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/about-us.html">About Us</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="../../img/favicon.png">
+          </span>
+          <!--<button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul>-->
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="../../img/favicon.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in">MS Page</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/cognoscere_event/index.html">Event Home</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/events.html">Events</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/gallery.html">Gallery</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/about-us.html">About Us</a>
+          <!--<div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Versions</span>
+          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+          <a class="mdl-navigation__link" href="">Android history</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Resources</span>
+          <a class="mdl-navigation__link" href="">Official blog</a>
+          <a class="mdl-navigation__link" href="">Android on Google+</a>
+          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">For developers</span>
+          <a class="mdl-navigation__link" href="">App developer resources</a>
+          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+          <a class="mdl-navigation__link" href="">Android SDK</a>-->
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">LEVEL 4</div>
+          <!--<div class="logo-font android-sub-slogan">
+            Here you will be facing a four level challenge prepared by us.<br> As you progress through the levels the difficulty increases.<br> So sharpen your mind and face them with courage.
+          </div>-->
+          <div class="logo-font android-create-character">
+          <a> Press the button below to show/hide Instructions </a>
+          </div>
+          <div style="text-align:center">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="tinkercad-show" onclick="show_hide_video()">
+              <i class="material-icons">expand_more</i>
+            </button>
+           </div>
+           <div>
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="tinkercad-hide" onclick="show_hide_video()" style="display:none">
+              <i class="material-icons">expand_less</i>
+            </button>
+           </div>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center mdl-js-ripple-effect" id="tinkercad-video" style="display:none">
+          <div class="mdl-typography--display-1-color-contrast">Instructions</div>
+          <p class="mdl-typography--font-light" style="padding-left: 10px; padding-right: 10px;">
+            It is mandatory that all the participants should sign up to the platform Tinkercad to submit their work. It is mandatory that all the participants need to go through the explanation.<br>
+            The detailed description on how to use the platform is given in the video below. The instructions for submission of the work is also provided in this.
+           </p>
+          <div class="android-screens">
+            <div class="android-screen">
+                <iframe class = "video" src="https://drive.google.com/file/d/1ZifLh7dIqWd2Cs-8ULVnEUhFoTk1xUNg/preview" width="1080" height="600"></iframe>
+            </div>
+        </div>
+    </div>
+        <div class="android-customized-section">
+          <br><br>
+          <div class="mdl-typography--display-1-color-contrast">Question</div><br>
+          <p class="mdl-typography--font-light" style="padding-left: 20%; padding-right: 20%; text-align:left;">
+            Design a circuit using arduino to display "COGNOSCrE" on a 7 segment display letter by letter and its corresponding morse code on a buzzer.Use 5 digit binary representation for each alphabet (eg:-'00000' stands for alphabet 'a')by using a DIP switch. Also include two separate push button switches to read the letters and display it on 7 segment display one by one and the other one to produce the morse code of the word altogether. Also the letters of the word are to be displayed while the morse code is produced separately.
+            <br><br>
+            Components to be used: Arduino uno,buzzer,DIP switch,1x 7 segment display,2x push button switches.
+<!-- DivTable.com -->
+            </p>
+            <p class="mdl-typography--font-light" style="padding-left: 20%; padding-right: 20%; text-align:left;">
+              <br>
+            Expected Output:<a href = "https://drive.google.com/open?id=105WWNDUq31wKLYR3893bPXL5b9D5uS7t" rel="noopener noreferrer" target="_blank"> Video</a><br><br>
+            Submit your answers
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-wCiOrvkSbBhufiorCnX1ptaZndeE-N9O_w4x7RH5BWBNHQ/viewform?usp=sf_link" rel="noopener noreferrer" target="_blank">here</a>
+
+
+          <!--<div class="android-customized-section-image"></div>-->
+          <br><br>
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Rules and Regulations</div>
+            <p class="mdl-typography--font-light" style="text-align:justify">
+              1.The event is planned for a span of around 10 days consisting of 4 different levels.<br><br>
+              2.Participants should only attempt the questions assigned to their respective year of study.<br><br>
+              3.There will be a common registration link for all the participants which will be open throughout the event. It is mandatory to register for the event before starting to participate in any of the levels.<br><br>
+              4.People can start participating from any of the 4 levels. <br><br>
+              5.The link for each of the levels will be open only for a specified period of time. Participants need to submit the work within the time frame. <br><br>
+              6.Submission of the work after the specified time will not be considered for evaluation.<br><br>
+              7.Separate grading will be done for each of the levels. The one who submits first will be awarded more marks.<br><br>
+              8.If there is any difficulty in saving the document, then do take a screen recording of your work and submit it.<br><br>
+              9.The event winners will be asked for an ID verification.<br><br>
+            </p>
+          </div>
+        </div>
+        <!--<div class="question-section mdl-typography--text-center">
+          <div class="logo-font question-character">
+          <a style="padding-left: 5px; padding-right: 5px;">Press the button below to show/hide Question</a>
+          </div>
+          <div style="text-align:center">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="questions-show" onclick="show_hide_questions()">
+              <i class="material-icons">expand_more</i>
+            </button>
+           </div>
+           <div>
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="questions-hide" onclick="show_hide_questions()" style="display:none">
+              <i class="material-icons">expand_less</i>
+            </button>
+           </div>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center mdl-js-ripple-effect" id="tinkercad-question" style="display:none">
+          <div class="mdl-typography--display-1-color-contrast">Question 1</div>
+          <br>
+          <p class="mdl-typography--font-light" style="padding-left: 10px; padding-right: 10px;">
+            Design a hand sanitizer which displays the no:of persons who come to the shop.(every time when a person comes the servo turns 60 degree)
+           </p>
+            <a href="https://forms.gle/y1Kj9Ycj2LwMiGyz9">Submit here</a>-->
+          <!--<div class="android-screens">
+            <div class="android-screen">
+                <iframe class = "video" src="https://www.tinkercad.com/things/9XCJjf3dJhp" width="1080" height="600"></iframe>
+               <iframe width="725" height="453" src="https://www.tinkercad.com/embed/ait0A7FT8OF" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+           </div>
+        </div>-->
+        <br><br>
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <a href = "https://instagram.com/mixedsignalsmec?igshid=cph1h5n4iu6j"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+              &nbsp;
+              <a href = "https://www.facebook.com/202606066569515/"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://mixedsignals.mec.ac.in" target="_blank">Mixed Signals</a></p>
+            <!--<p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>-->
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <!--<a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>-->
+            <a class="android-link mdl-typography--font-light" href="http://mixedsignals.mec.ac.in">MS Home</a>
+            <a class="android-link mdl-typography--font-light" href="">Event Home</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <a href="http://mixedsignals.mec.ac.in" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">MS Home</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../../js_shop/jquery.min.js"></script>
+    <script src="../../js_shop/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script>
+    //Instruction show/hide
+//  var x = document.getElementById("main-section");
+//    x.style.display = "none";
+//    x = document.getElementById("view-source");
+//    x.style.display = "none";
+    //Login/signup formshow/hide
+    // Toggle Function
+  function show_hide_video() {
+  var x = document.getElementById("tinkercad-video");
+  var y = document.getElementById("tinkercad-hide");
+  var z = document.getElementById("tinkercad-show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+  function show_hide_questions() {
+  var x = document.getElementById("tinkercad-question");
+  var y = document.getElementById("questions-hide");
+  var z = document.getElementById("questions-show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+</script>
+   <script src="../js_shop/notify.min.js"></script>
+  </body>
+</html>

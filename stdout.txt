@@ -1,0 +1,4 @@
+listening for requests ..
+{ sql: 'SELECT Count(*),Password,Year FROM cognoscere_reg WHERE Candidate_ID=153;' }
+{ sql: 'SELECT Count(*),Password,Year FROM cognoscere_reg WHERE Candidate_ID=153;' }
+{ sql: 'SELECT' }

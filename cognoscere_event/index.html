@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cognoscere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Cognoscere</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+  	<!--Login/Signup Form-->
+<!--  	<div id="form-title" class="pen-title">
+  <h1>COGNOSCERE</h1><span>Login/Signup for COGNOSCERE</span>
+</div>-->
+<!-- Form Module-->
+<!--<div id="form-main" class="module form-module">
+  <div class="toggle"><ion-icon name="create"></ion-icon>
+    <div class="tooltip">Click here</div>
+  </div>
+  <div class="form">
+    <h2>Login to your account</h2>
+    <form>-->
+      <!--<input id="login-user" type="tel" placeholder="UserID"/>-->
+<!--      <input id="login-user" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" type = "number" placeholder="UserID" min = "1" max = "9999999" />
+      <input id="login-password" type="password" placeholder="Password"/>
+      <input type="button" onclick="return login()" value="Login"></input>
+      <p style="text-align:center">2nd level starts at 2PM.<br>Registrations open.</p>
+    </form>
+  </div>
+  <div class="form">
+    <h2>Create an account</h2>
+    <form>
+      <input id="register-name" type="text" placeholder="Name"/>
+      <input id="register-password" type="password" placeholder="Password"/>
+      <input id="register-email" type="email" placeholder="Email Address"/>
+      <input id="register-phone" type="tel" placeholder="Phone Number"/>
+      <input id="register-branch" type="text" placeholder="Branch of Study"/>
+      <select id="register-year" name="year">
+      	 <option selected disabled value = "Select Year of Study" >Select Year of Study</option>
+         <option value="1">1st Year</option>
+         <option value="2">2nd Year</option>
+         <option value="3">3rd Year</option>
+         <option value="4">4th Year</option>
+      </select>
+      <input id="register-noc" type="text" placeholder="Name of College"/>
+      <input id="register-nou" type="text" placeholder="Name of University"/>
+      <input id="register-regno" type="text" placeholder="University Register Number"/>
+      <input type="button" onclick=" return Register()" value="Register"></input>
+    </form>
+  </div>
+  <div class="cta"><a onclick="javascript:return forgot()">Forgot your password?</a></div>
+</div>-->
+    <!--Main Page-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id ="main-section">
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="../img/favicon.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!--<div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+           <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>-->
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in">MS Page</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/cognoscere_event/index.html">Event Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/events.html">Events</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/gallery.html">Gallery</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://mixedsignals.mec.ac.in/about-us.html">About Us</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="../img/favicon.png">
+          </span>
+          <!--<button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul>-->
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="../img/favicon.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in">MS Page</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/cognoscere_event/index.html">Event Home</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/events.html">Events</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/gallery.html">Gallery</a>
+          <a class="mdl-navigation__link" href="http://mixedsignals.mec.ac.in/about-us.html">About Us</a>
+          <!--<div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Versions</span>
+          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+          <a class="mdl-navigation__link" href="">Android history</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Resources</span>
+          <a class="mdl-navigation__link" href="">Official blog</a>
+          <a class="mdl-navigation__link" href="">Android on Google+</a>
+          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">For developers</span>
+          <a class="mdl-navigation__link" href="">App developer resources</a>
+          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+          <a class="mdl-navigation__link" href="">Android SDK</a>-->
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">COGNOSCERE</div>
+          <div class="logo-font android-sub-slogan" style="padding-left: 10%; padding-right: 10%;LINE-HEIGHT:30px;">
+
+          	Cognoscere is an Electronics CAD simulation based four level online event which targets students of all years from different engineering colleges irrespective of their branches. The platform used for the event is Tinkercad. The entry to any of the four levels is possible by a common registration link and a grading based on the time of submission is done.
+          </div>
+          <div class="logo-font android-create-character">
+          <a> Press the button below to show/hide Instructions </a>
+          </div>
+          <div style="text-align:center">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="tinkercad-show" onclick="show_hide_video()">
+              <i class="material-icons">expand_more</i>
+            </button>
+           </div>
+           <div>
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="tinkercad-hide" onclick="show_hide_video()" style="display:none">
+              <i class="material-icons">expand_less</i>
+            </button>
+           </div>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center mdl-js-ripple-effect" id="tinkercad-video" style="display:none">
+          <div class="mdl-typography--display-1-color-contrast">Instructions</div>
+          <p class="mdl-typography--font-light" style="padding-left: 10px; padding-right: 10px;">
+          	It is mandatory that all the participants should sign up to the platform Tinkercad to submit their work. It is mandatory that all the participants need to go through the explanation.<br>
+          	The detailed description on how to use the platform is given in the video below. The instructions for submission of the work is also provided in this.
+           </p>
+          <div class="android-screens">
+            <div class="android-screen">
+                <iframe class = "video" src="https://drive.google.com/file/d/1ZifLh7dIqWd2Cs-8ULVnEUhFoTk1xUNg/preview" width="1080" height="600"></iframe>
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div class="android-customized-section-image"></div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast" style="text-align': centre">LEVEL 1 WINNERS</div><br>
+            <img src="images/MSResultL1.gif" alt="Level 1 winners" style="width:100%;height:100%;">
+            <br><br><br>
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast" style="text-align': centre">LEVEL 2 WINNERS</div><br>
+            <img src="images/MSResultL2.gif" alt="Level 1 winners" style="width:100%;height:100%;">
+            <br><br><br>
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Rules and Regulations</div>
+            <p class="mdl-typography--font-light" style="text-align:justify">
+              1.The event is planned for a span of around 10 days consisting of 4 different levels.<br><br>
+              2.Participants should only attempt the questions assigned to their respective year of study.<br><br>
+              3.There will be a common registration link for all the participants which will be open throughout the event. It is mandatory to register for the event before starting to participate in any of the levels.<br><br>
+              4.People can start participating from any of the 4 levels. <br><br>
+              5.The link for each of the levels will be open only for a specified period of time. Participants need to submit the work within the time frame. <br><br>
+              6.Submission of the work after the specified time will not be considered for evaluation.<br><br>
+              7.Separate grading will be done for each of the levels. The one who submits first will be awarded more marks.<br><br>
+              8.If there is any difficulty in saving the document, then do take a screen recording of your work and submit it.<br><br>
+              9.The event winners will be asked for an ID verification.<br><br>
+            </p>
+          </div>
+          <br>
+
+        </div>
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">Event Classes</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/1styears.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">First Years</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A Four level challenge designed for First year students</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a id="first-year" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./1styear/levels.html" >
+                   Go to Site
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/2ndyears.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Second Years</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A Four level challenge designed for Second year students</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a id="second-year" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./2ndyear/levels.html">
+                   Go to Site
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/3rd&4thyears.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Third and Fourth Years</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A Four level challenge designed for Third and Fourth year students</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a id="third&fourth-year" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="./3rd&4thyear/levels.html">
+                   Go to Site
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <a href = "https://instagram.com/mixedsignalsmec?igshid=cph1h5n4iu6j"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+              &nbsp;
+              <a href = "https://www.facebook.com/202606066569515/"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://mixedsignals.mec.ac.in" target="_blank">Mixed Signals</a></p>
+            <!--<p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>-->
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <!--<a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>-->
+            <a class="android-link mdl-typography--font-light" href="http://mixedsignals.mec.ac.in">MS Home</a>
+            <a class="android-link mdl-typography--font-light" href="">Event Home</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <a href="http://mixedsignals.mec.ac.in" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">MS Home</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../js_shop/jquery.min.js"></script>
+    <script src="../js_shop/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script>
+    //Instruction show/hide
+//  var x = document.getElementById("main-section");
+//    x.style.display = "none";
+//    x = document.getElementById("view-source");
+//    x.style.display = "none";
+    //Login/signup formshow/hide
+    // Toggle Function
+$('.toggle').click(function(){
+  // Switches the Icon
+  $(this).children('i').toggleClass('fa-pencil');
+  // Switches the forms
+  $('.form').animate({
+    height: "toggle",
+    'padding-top': 'toggle',
+    'padding-bottom': 'toggle',
+    opacity: "toggle"
+  }, "slow");
+});
+  function show_hide_video() {
+  var x = document.getElementById("tinkercad-video");
+  var y = document.getElementById("tinkercad-hide");
+  var z = document.getElementById("tinkercad-show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+  function maxLengthCheck(object) {
+    if (object.value.length > object.max.length)
+      object.value = object.value.slice(0, object.max.length)
+  }
+
+  function isNumeric (evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode (key);
+    var regex = /[0-9]|\./;
+    if ( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+  function levelreach(item)
+  {
+    console.log("abc");
+    let year = sessionStorage.getItem('Year');
+    if(year == 1)
+    {
+      if(item.id == "first-year")
+      {
+        //alert("TBA");
+        window.location.href = "./1styear/level2.html"
+      }
+      else
+      {
+         alert("You are not a first year student");
+      }
+    }
+    else if(year == 2)
+    {
+      if(item.id == "second-year")
+      {
+        //alert("TBA");
+        window.location.href = "./2ndyear/level2.html"
+      }
+      else
+      {
+         alert("You are not a second year student");
+      }
+    }
+    else if(year == 3 || year == 4)
+    {
+       if(item.id == "third&fourth-year")
+      {
+        //alert("TBA");
+        window.location.href = "./3rd&4thyear/level2.html"
+      }
+      else
+      {
+         alert("You are not a Third or Fourth year student");
+      }
+    }
+    else
+    {
+      alert("You have not entered year properly.\nPls contact admin.");
+    }
+  }
+</script>
+<script type="text/javascript">
+   function Register()
+   {
+    $.notify("Processing..." , {globalPosition:"top center" , className: 'info',autoHide: false, clickToHide: false});
+    sqlstring = "SELECT Count(Email_ID) FROM cognoscere_reg WHERE Email_ID="+JSON.stringify(document.getElementById("register-email").value) + ";"
+    //var data = httpGetAsync("http://mixedsignals.mec.ac.in:1234",sqlstring);
+    //console.log(data["Password"]);
+    var request = new XMLHttpRequest();
+    var path = "http://mixedsignals.mec.ac.in:1234?sql="+sqlstring; // enter your server ip and port number
+    //console.log(path);
+    //request.open("GET", path, true); // true = asynchronous
+   $.get(path, {}, function(data){
+        //console.log(data);
+        //console.log(data["Count(Email_ID"]);
+        if(data["Count(Email_ID)"]==0)
+        {
+          if(document.getElementById("register-password").value == ""  || document.getElementById("register-password").value == null)
+          {
+          	$('.notifyjs-corner').empty();
+          	alert("Enter a proper Password");
+          	return false;
+          	//window.location.href = './index.html';
+          }
+          sqlstring = "INSERT into cognoscere_reg (Name,Email_ID,Phone,Password,Year,Branch_of_study,Name_of_college,Name_of_University,Register_number) values ("+ JSON.stringify(document.getElementById("register-name").value)+ "," + JSON.stringify(document.getElementById("register-email").value)+ "," +
+            JSON.stringify(document.getElementById("register-phone").value)+ "," +
+            JSON.stringify(document.getElementById("register-password").value) + "," +
+            JSON.stringify(document.getElementById("register-year").value)+ "," + JSON.stringify(document.getElementById("register-branch").value)+ "," + JSON.stringify(document.getElementById("register-noc").value)+ "," + JSON.stringify(document.getElementById("register-nou").value)+ "," + JSON.stringify(document.getElementById("register-regno").value) + ");";
+          var request = new XMLHttpRequest();
+          var path = "http://mixedsignals.mec.ac.in:1234?sql="+sqlstring;
+          $.get(path, {}, function(data){
+
+             sqlstring = "SELECT Candidate_ID FROM cognoscere_reg WHERE Email_ID="+JSON.stringify(document.getElementById("register-email").value) + ";";
+             var request = new XMLHttpRequest();
+             var path = "http://mixedsignals.mec.ac.in:1234?sql="+sqlstring;
+             $.get(path, {}, function(data){
+             var body_registered ="Thank you!!<br>You have successfully registered for Cognoscere an Electronics CAD simulation based Event , conducted by Mixed Signals, MEC.<br>Bide your time till Monday(11/05/20). Stay updated!<br><br>Every minute counts. Expedite your submissions, for it adjudicates the winner!! Decide. Commit. Succeed.<br> Your UserID is "+ JSON.stringify(data["Candidate_ID"]) + "<br><br> Find more at: http://mixedsignals.mec.ac.in/events.html"
+               Email.send({
+                 SecureToken : "d6bad001-c331-4e9a-b57c-4a5c772c5b01",
+                 To : document.getElementById("register-email").value,
+                 From : "mixedsignals.mec.in@gmail.com",
+                 Subject : "MixedSignals Cognoscere Event(registration Confirmation)",
+                 Body : body_registered
+                 }).then(function () {
+                 message => console.log(message)
+                 $('.notifyjs-corner').empty();
+                 alert("Thank you for Registering.\nWe have sent a mail to your Email address with the UserID.\nPlease login using the provided UserID.");
+                 return true;
+                 //window.location.href = "../shop1.html";
+                 });
+
+             });
+          });
+        }
+        else
+        {
+          $('.notifyjs-corner').empty();
+          alert("User already registered");
+          return false;
+        }
+
+   });
+   }
+</script>
+<script type="text/javascript">
+   function login()
+   {
+     $.notify("Processing..." , {globalPosition:"top center" , className: 'info',autoHide: false, clickToHide: false});
+    if(document.getElementById("login-user").value == null || document.getElementById("login-user").value == "")
+    {
+      $('.notifyjs-corner').empty();
+      alert("UserID Invalid");
+      //window.location.href = "./index.html";
+      return false;
+    }
+     sqlstring = "SELECT Count(*),Password,Year FROM cognoscere_reg WHERE Candidate_ID="+document.getElementById("login-user").value + ";";
+     var request = new XMLHttpRequest();
+     var path = "http://mixedsignals.mec.ac.in:1234?sql="+sqlstring;
+     $.get(path, {}, function(data){
+        if((data["Count(*)"] >0) && (data["Password"] == document.getElementById("login-password").value))
+        {
+          $('.notifyjs-corner').empty();
+          var x = document.getElementById("form-title");
+          x.style.display = "none";
+          x = document.getElementById("form-main");
+          x.style.display = "none";
+          x = document.getElementById("main-section");
+          x.style.display = "block";
+          x = document.getElementById("view-source");
+          x.style.display = "block";
+          sessionStorage.setItem('Year', data["Year"]);
+          return true;
+        }
+        else if((data["Count(*)"] >0) && (data["Password"] != document.getElementById("login-password").value))
+        {
+          $('.notifyjs-corner').empty();
+          alert("Incorrect Password");
+          return false;
+        }
+        else
+        {
+          $('.notifyjs-corner').empty();
+          alert("Enter registered UserID/ Register");
+          return false;
+        }
+     });
+   }
+</script>
+<script type="text/javascript">
+   function forgot()
+   {
+    $.notify("Processing..." , {globalPosition:"top center" , className: 'info',autoHide: false, clickToHide: false});
+    if(document.getElementById("login-user").value == null || document.getElementById("login-user").value == "")
+    {
+      $('.notifyjs-corner').empty();
+      alert("UserID Invalid");
+      return false;
+    }
+    sqlstring = "SELECT Count(Candidate_ID),Email_ID,Password FROM cognoscere_reg WHERE Candidate_ID="+document.getElementById("login-user").value + ";";
+    var request = new XMLHttpRequest();
+    var path = "http://mixedsignals.mec.ac.in:1234?sql="+sqlstring;
+    $.get(path, {}, function(data){
+      if (JSON.stringify(data["Count(Candidate_ID)"]) > 0)
+      {
+        var body_registered ="UserID "+ document.getElementById("login-user").value + "<br>Your Password is " + data["Password"] + "<br><br> Find more at: http://mixedsignals.mec.ac.in/events.html"
+        Email.send({
+        	     SecureToken : "d6bad001-c331-4e9a-b57c-4a5c772c5b01",
+                 To : data["Email_ID"],
+                 From : "mixedsignals.mec.in@gmail.com",
+                 Subject : "MixedSignals Cognoscere Event(Password Recollection)",
+                 Body : body_registered
+                 }).then(function () {
+                 message => console.log(message)
+                 $('.notifyjs-corner').empty();
+                 alert("We have sent the Password to your registered Email");
+                 //window.location.href = "../shop1.html";
+                 });
+        return true;
+      }
+      else
+      {
+        $('.notifyjs-corner').empty();
+        alert("UserID Invalid");
+        return false;
+      }
+    });
+   }
+    </script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="../js_shop/notify.min.js"></script>
+  </body>
+</html>

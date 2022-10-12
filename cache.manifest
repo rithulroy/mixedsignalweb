@@ -1,0 +1,36 @@
+CACHE MANIFEST
+# 2010-06-18:v2
+
+# Explicitly cached 'master entries'.
+CACHE:
+/favicon.ico
+index.html
+/css/style.css
+img/bg.jpg
+favicon.png
+logo2.png
+js/main.js
+lib/animate/animate.min.css
+lib/bootstrap/css/bootstrap.css
+lib/bootstrap/js/bootstrap.bundle.min.js
+lib/easing/easing.min.js
+lib/font-awesome/css/font-awesome.min.css
+lib/ionicons/css/ionicons.min.css
+lib/jquery/jquery-migrate.min.js
+lib/jquery/jquery.min.js
+lib/magnific-popup/magnific-popup.css
+lib/magnific-popup/magnific-popup.min.js
+lib/superfish/hoverIntent.js
+lib/superfish/superfish.min.js
+lib/wow/wow.min.js
+
+# Resources that require the user to be online.
+NETWORK:
+*
+
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+FALLBACK:
+/main.py /static.html
+images/large/ images/offline.jpg

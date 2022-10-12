@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rent n Build</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css_shop/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css_shop/css/animate.css">
+
+    <link rel="stylesheet" href="../css_shop/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css_shop/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css_shop/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../css_shop/css/aos.css">
+
+    <link rel="stylesheet" href="../css_shop/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../css_shop/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css_shop/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="../css_shop/css/flaticon.css">
+    <link rel="stylesheet" href="../css_shop/css/icomoon.css">
+    <link rel="stylesheet" href="../css_shop/css/style.css">
+  </head>
+<button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+  <body class="goto-here">
+      <div class="py-1 bg-black">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="phone-portrait"></ion-icon></div>
+                <span class="text">Web Admin: +91 94967 88779</span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="mail"></ion-icon></div>
+                <span class="text">mixedsignals.mec.in@gmail.com</span>
+              </div>
+              <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                <span class="text">Delivery at college only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../shop1.html">Rent n Build</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Site Home</a></li>
+            <li class="nav-item"><a href="../shop1.html" class="nav-link">Shop Home</a></li>
+           <!-- <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="">Shop</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>-->
+            <li class="nav-item"><a href="../about-us.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="https://github.com/KurienEapen/MixedSignals_Shop/blob/master/README.md" class="nav-link">How to use?</a></li>
+            <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link" id="cartquantity"><ion-icon name="cart"></ion-icon>[0]</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('../img/bg.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <!--<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Shop</span></p>
+            <h1 class="mb-0 bread">Shop</h1>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-cart">
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+						        <th>&nbsp;</th>
+						        <th>&nbsp;</th>
+						        <th>Product</th>
+						        <th>Price</th>
+						        <th>Quantity</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody id="mainWrapper">
+						 <!--     <tr class="text-center">
+						        <td class="product-remove"><a href="#"><ion-icon name="close"></ion-icon></a></td>
+
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
+
+						        <td class="product-name">
+						        	<h3>Nike Free RN 2019 iD</h3>
+						        	<p>Far far away, behind the word mountains, far from the countries</p>
+						        </td>
+
+						        <td class="price">$4.90</td>
+
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100" readonly="readonly">
+					          	</div>
+					          </td>
+
+						        <td class="total">$4.90</td>
+						      </tr>
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
+
+						        <td class="product-name">
+						        	<h3>Nike Free RN 2019 iD</h3>
+						        	<p>Far far away, behind the word mountains, far from the countries</p>
+						        </td>
+
+						        <td class="price">$15.70</td>
+
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100" readonly="readonly">
+					          	</div>
+					          </td>
+
+						        <td class="total">$15.70</td>
+						      </tr>-->
+						    </tbody>
+						  </table>
+					  </div>
+    			</div>
+    		</div>
+    		<div class="row justify-content-start">
+    			<div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+    					<h3>Cart Totals</h3>
+    					<p class="d-flex">
+    						<span>Subtotal</span>
+    						<span id="subtotal">0</span>
+    					</p>
+    					<!--<p class="d-flex">
+    						<span>Delivery</span>
+    						<span>$0.00</span>
+    					</p>-->
+    					<p class="d-flex">
+    						<span>Discount</span>
+    						<span id="discount">0</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price">
+    						<span>Total</span>
+    						<span id="total">0</span>
+    					</p>
+    				</div>
+    				<p class="text-center"><a id="checkoutbutton" onclick = "checkout(this)" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+    			</div>
+    		</div>
+			</div>
+		</section>
+
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="mouse">
+            <a href="#" class="mouse-icon">
+              <div class="mouse-wheel"><ion-icon name="ios-arrow-up" size="large"></ion-icon></div>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rent n Build</h2>
+              <p>This is an online shopping site by mixedsignals for renting electronic items at a bargain price.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <a href="https://twitter.com/MexMixed"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+                <a href="https://www.facebook.com/mixedsignalsmec/"><ion-icon name="logo-facebook" size="large"></span></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="shop1.html" class="py-2 d-block">Shop</a></li>
+                <li><a href="about-us.html" class="py-2 d-block">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><a href="https://www.google.com/maps/place/Model+Engineering+College/@10.0273396,76.3274078,17z/data=!4m13!1m7!3m6!1s0x3b080c5a87044b5d:0x1d45e225cbbc660a!2sModel+Engineering+College,+Thrikkakara,+Edappally,+Kochi,+Kerala+682021!3b1!8m2!3d10.0273253!4d76.3295369!3m4!1s0x3b080c5006491601:0xcf23e14245d4694d!8m2!3d10.0283636!4d76.3285124"><ion-icon name="pin" size="large"></ion-icon><span class="text"> Location</span></a></li>
+                  <li><a href="tel:+919496788779"><ion-icon name="call" size="large"></ion-icon><span class="text">Web Admin: +91 94967 88779</span></a></li>
+                  <li><a href="http://mixedsignals.mec.ac.in/"><ion-icon name="mail-open" size="large"></ion-icon><span class="text">mixedsignals@mec.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://mixedsignals.mec.ac.in" target="_blank">Mixed Signals</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="../js_shop/jquery.min.js"></script>
+  <script src="../js_shop/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js_shop/popper.min.js"></script>
+  <script src="../js_shop/bootstrap.min.js"></script>
+  <script src="../js_shop/jquery.easing.1.3.js"></script>
+  <script src="../js_shop/jquery.waypoints.min.js"></script>
+  <script src="../js_shop/jquery.stellar.min.js"></script>
+  <script src="../js_shop/owl.carousel.min.js"></script>
+  <script src="../js_shop/jquery.magnific-popup.min.js"></script>
+  <script src="../js_shop/aos.js"></script>
+  <script src="../js_shop/jquery.animateNumber.min.js"></script>
+  <script src="../js_shop/bootstrap-datepicker.js"></script>
+  <script src="../js_shop/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="../js_shop/google-map.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="../js_shop/main.js"></script>
+  <script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '828283127076-is226se80keesbrh4o0b9t8qdv1prirs.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyCZkvRWzg1xwJ9VKSOw1JT8XsZbLGLgLus';
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets";
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(1);
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'none';
+          listMajors();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+      function create(tagName, props) {
+  return Object.assign(document.createElement(tagName), (props || {}));
+}
+function ac(p, c) {
+  if (c) p.appendChild(c);
+  return p;
+}
+//var tot1=0;
+      function addtag(ip,id,name,quantity,img,price)
+      {
+        var discount = 0;
+        let mainWrapper = document.getElementById("mainWrapper");
+               var tr = create("tr", {
+  className: "text-center" ,
+  id : "product" + id
+});
+
+var tdpr = create("td", {
+  className: "product-remove"
+});
+var a= create("a", {
+  //href : "#"
+  id: id ,
+});
+var span = create("ion-icon", {
+  name: "close"
+});
+
+var tdip = create("td", {
+  className: "image-prod"
+});
+
+var divimg = create("div", {
+  className: "img" ,
+  id: "prodimg" + id
+  //style: "background-image:url(../img/bg.jpg);"
+});
+
+var tdpn = create("td", {
+  className: "product-name"
+});
+var h3 = create("h3", {
+  id: "prodname" + id
+});
+var p = create("p");
+var tdp = create("td", {
+  className : "price" ,
+  id: "prodprice" +id
+});
+var tdq = create("td", {
+  className: "quantity"
+});
+var div = create("div", {
+  className: "input-group mb-3"
+});
+var input = create("input", {
+  type:"text" ,
+  id: "prodquantity" +id ,
+  name:"quantity"  ,
+  className:"quantity form-control input-number" ,
+  value:"1" ,
+  min:"1" ,
+  max:"100" ,
+  readOnly:"true"
+});
+var tdt = create("td", {
+  className: "total" ,
+  id: "prodtotal"+ id
+});
+ac(mainWrapper, ac(tr, ac(tdpr,ac(a, span))));
+ac(tr,ac(tdip,divimg));
+ac(tr,ac(tdpn,h3));
+ac(tdpn,p);
+ac(tr,tdp);
+ac(tr,ac(tdq,ac(div,input)));
+ac(tr,tdt);
+var paragraph = document.getElementById("prodname"+id);
+var text = document.createTextNode(name);
+paragraph.appendChild(text);
+document.getElementById("prodquantity"+id).value = quantity;
+var paragraph = document.getElementById("prodprice"+id);
+var text = document.createTextNode("Rs " + price);
+paragraph.appendChild(text);
+document.getElementById("prodimg"+id).style = "background-image:url("+ img +");";
+var paragraph = document.getElementById("prodtotal"+id);
+var text = document.createTextNode("Rs " + price*quantity);
+paragraph.appendChild(text);
+var subtotal = document.getElementById("subtotal");
+var subt_value = parseInt(subtotal.innerText || subtotal.textContent);
+subt_value = parseInt(subt_value) + parseInt(price*quantity);
+//var text = document.createTextNode(subt_value);
+subtotal.innerHTML = subt_value;
+var discount_tag = document.getElementById("discount");
+discount_tag.innerHTML = discount;
+var total_tag = document.getElementById("total");
+total_tag.innerHTML = subt_value-discount;
+var prod = document.getElementById(id);
+document.getElementById("checkoutbutton").href = "checkout.html?" + ip + "?" + subt_value + "?" + discount;
+prod.addEventListener('click', function(){
+    prodremove(ip,this);});
+//var prodremove = "prodremove" + id;
+/* prodremove.onclick = () => {
+  const myNode = document.getElementById("mainWrapper");
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+  }*/
+//var tot = parseInt(price*quantity);
+//return tot;
+      }
+//var tot1 = 0;
+      function cart_get_2(ip,id,quantity)
+      {
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            //var aarr = window.location.href.split('?');
+            //var id = aarr[aarr.length -1];
+            //for (i = 0; i < range.values.length; i++) {
+              var row = range.values[id];
+              //var quantity = parseInt(row[1]);
+              addtag(ip,id,row[0],quantity,row[4],row[6]);
+              //alert(tot);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //alert(tot);
+          //return tot;
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+      function total_get()
+      {
+        //alert(tot1);
+        var total = 0;
+        for(i=0;i!=-1;)
+        {
+          var myEle = document.getElementById("prodtotal" + i);
+          if(myEle)
+          {
+            var text = myEle.innerText || myEle.textContent;
+            total=total + parseInt(text);
+            i++;
+            alert(total);
+          }
+          else
+          {
+            i=-1;
+          }
+        }
+        var paragraph = document.getElementById("subtotal");
+var text = document.createTextNode("Rs " + total);
+paragraph.appendChild(text);
+var discount=10;
+var paragraph = document.getElementById("discount");
+var text = document.createTextNode("Rs " + discount);
+paragraph.appendChild(text);
+var paragraph = document.getElementById("total");
+var text = document.createTextNode("Rs " + (total-discount));
+paragraph.appendChild(text);
+      }
+      function cartquantity_get(message)
+      {
+        //alert("reachedhere");
+          gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: message +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+             var sum = 0;
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              sum  = sum + parseInt(row[1]);
+              //var id=i+2;
+              //sheetadd_put(message,id,row[0],0);
+            }
+              //alert(ip);
+              var paragraph = document.getElementById("cartquantity");
+              paragraph.removeChild(paragraph.childNodes[1]);
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("["+sum +"]");
+              paragraph.appendChild(text);
+              //var paragraph = document.getElementById("cartquantity");
+              //paragraph.textContent = "[0]";
+             //alert('0');
+          } else {
+              var paragraph = document.getElementById("cartquantity");
+              paragraph.removeChild(paragraph.childNodes[1]);
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("[0]");
+              paragraph.appendChild(text);
+            //alert("else");
+            //appendPre('No data found.');
+          }
+          //location.reload();
+          //sheet
+        }, function(response) {
+          console.error('Error: ' + response.result.error.message);
+        });
+      }
+        function cart_get(ip)
+        {
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: ip +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          var tot = 0;
+          //document.getElementById("checkoutbutton").href = "checkout.html?" + ip + "?0?0";
+          if (range.values.length > 0) {
+            //var aarr = window.location.href.split('?');
+            //var id = aarr[aarr.length -1];
+            cartquantity_get(ip);
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              var quantity = parseInt(row[1]);
+              if(quantity != 0)
+              {
+                cart_get_2(ip,i,row[1]);
+                //alert(tot1);
+              }
+            }
+
+          } else {
+            //appendPre('No data found.');
+          }
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+        }
+        function prodremove2(message,i)
+        {
+        	var id= parseInt(i)+2;
+      	        	var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!B' + id + ':B' +id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [['0']]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        cartquantity_get(message);
+        //alert('Added to cart');
+        console.log(response.result);
+        //cartquantity_get(message);
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+        }
+        function prodtotalchange(ip,id)
+        {
+        	//var discount = 0;
+        	var subtotal = document.getElementById("subtotal");
+            var subt_value = parseInt(subtotal.innerText || subtotal.textContent);
+            var quantity = document.getElementById("prodquantity"+id).value;
+            var price_tag = document.getElementById("prodprice"+id);
+            var price_text = price_tag.innerText || price_tag.textContent;
+            var price_value = price_text.split(" ");
+            var price = parseInt(price_value[1]);
+            //alert(price);
+            subt_value = parseInt(subt_value) - parseInt(price*quantity);
+            subtotal.innerHTML = subt_value;
+            var discount_tag = document.getElementById("discount");
+            var discount=parseInt(discount_tag.innerHTML);
+            var total_tag = document.getElementById("total");
+            total_tag.innerHTML = subt_value-discount;
+            //document.getElementById("checkoutbutton").href = "checkout.html?" + ip + "?" + subt_value + "?" + discount;
+        }
+        function prodremove(ip,ele)
+        {
+        	  const myNode = document.getElementById("product" + ele.id );
+        	  prodtotalchange(ip,ele.id);
+              prodremove2(ip,ele.id);
+              //cartquantity_get(ip);
+              while (myNode.firstChild) {
+               myNode.removeChild(myNode.firstChild);
+              }
+        }
+        function checkout(ele)
+        {
+            var subtotal = document.getElementById("subtotal");
+            var subt_value = parseInt(subtotal.innerText || subtotal.textContent);
+            var discount_tag = document.getElementById("discount");
+            var discount=parseInt(discount_tag.innerHTML);            
+            if(subt_value == 0)
+            {
+              alert("No item in cart");
+              document.getElementById("checkoutbutton").href = "#";
+            }
+            else
+              document.getElementById("checkoutbutton").href = "checkout.html?" + subt_value + "?" + discount;
+        }
+         function listMajors() {
+         var timestamp =sessionStorage.getItem("timestamp");
+         cart_get(timestamp);
+         //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+         // cart_get(response.ip);
+         //}, "jsonp");
+         //document.getElementById('addcart').onclick = addcart;
+         //addtag();
+//var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => cart_get(ip)).catch(e => console.error(e))
+          //total_get();
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            //var aarr = window.location.href.split('?');
+            //var id = aarr[aarr.length -1];
+            //for (i = 0; i < range.values.length; i++) {
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+</script>
+
+  <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  <script>
+		$(document).ready(function(){
+
+		var quantity=1;
+		   $('.quantity-right-plus').click(function(e){
+
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            $('#quantity').val(quantity + 1);
+
+
+		            // Increment
+
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+
+		});
+	</script>
+	<script type="text/javascript">
+/*     $(document).ready(function(){
+     	let mainWrapper = document.getElementById("mainWrapper");
+     	function create(tagName, props) {
+  return Object.assign(document.createElement(tagName), (props || {}));
+}
+function ac(p, c) {
+  if (c) p.appendChild(c);
+  return p;
+}
+       var tr = create("tr", {
+  class: "text-center"
+});
+
+var tdpr = create("td", {
+  class: "product-remove"
+});
+
+var span = create("span", {
+  class: "ion-ios-close"
+});
+
+var tdip = create("td", {
+  class: "image-prod"
+});
+
+var divimg = create("div", {
+  class: "img" ,
+  style: "background-image:url(../img/bg.jpg);"
+});
+
+var tdpn = create("td", {
+  class: "product-name"
+});
+ac(mainWrapper, ac(tr, ac(tdpr, span), ac(tdip, divimg), tdpn));
+     });*/
+    </script>
+  </body>
+</html>
