@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rent n Build</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="icon" href="img/favicon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css_shop/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css_shop/css/animate.css">
+
+    <link rel="stylesheet" href="css_shop/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css_shop/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css_shop/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css_shop/css/aos.css">
+
+    <link rel="stylesheet" href="css_shop/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css_shop/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css_shop/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css_shop/css/flaticon.css">
+    <link rel="stylesheet" href="css_shop/css/icomoon.css">
+    <link rel="stylesheet" href="css_shop/css/style.css">
+  </head>
+  <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+  <body class="goto-here">
+      <div class="py-1 bg-black">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="phone-portrait"></ion-icon></div>
+                <span class="text">Web Admin: +91 94967 88779</span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="mail"></ion-icon></div>
+                <span class="text">mixedsignals.mec.in@gmail.com</span>
+              </div>
+              <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                <span class="text">Delivery at College Only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="./shop1.html">Rent n Build</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--<span class="oi oi-menu"></span>--><ion-icon name="menu"></ion-icon> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Site Home</a></li>
+            <li class="nav-item"><a href="shop1.html" class="nav-link">Shop Home</a></li>
+           <!-- <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="shop1.html">Shop</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>-->
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="https://github.com/KurienEapen/MixedSignals_Shop/blob/master/README.md" class="nav-link">How to use?</a></li>
+            <li class="nav-item cta cta-colored"><a href="/shop/cart.html" class="nav-link" id="cartquantity"><ion-icon name="cart"></ion-icon></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('img/bg.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <!--<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Shop</span></p>
+            <h1 class="mb-0 bread">Shop</h1>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="ftco-gallery">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+            <h2 class="mb-4">Introduction</h2>
+            <p id="intro" align="justify"></p>
+          </div>
+    	</div>
+    	</div>
+    </section>
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-10 order-md-last">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                  <a href="/shop/product-single?0" class="img-prod"><img class="img-fluid" id="prod_img0" alt="Product1">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?0" id="prod_name0"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price0"></span><span id="prod_price0"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart0" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow0" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                  <a href="/shop/product-single?1" class="img-prod"><img class="img-fluid" id="prod_img1" alt="Product2">
+                    <!--<span class="status">50% Off</span>-->
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?1" id="prod_name1"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price1"></span><span id="prod_price1"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart1" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow1" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?2" class="img-prod"><img class="img-fluid" id="prod_img2" alt="Product3">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?2" id="prod_name2"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price2"></span><span id="prod_price2"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart2" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow2" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?3" class="img-prod"><img class="img-fluid" id="prod_img3" alt="Product4">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?3" id="prod_name3"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price3"></span><span id="prod_price3"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart3" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow3" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                  <a href="/shop/product-single?4" class="img-prod"><img class="img-fluid" id="prod_img4" alt="Product5">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?4" id="prod_name4"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price4"></span><span id="prod_price4"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart4" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow4" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                  <a href="/shop/product-single?5" class="img-prod"><img class="img-fluid" id="prod_img5" alt="Product6">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?5" id="prod_name5"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price5"></span><span id="prod_price5"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart5" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow5" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?6" class="img-prod"><img class="img-fluid" id="prod_img6" alt="Product7">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?6" id="prod_name6"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price6"></span><span id="prod_price6"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart6" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow6" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?7" class="img-prod"><img class="img-fluid" id="prod_img7" alt="Product8">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?7" id="prod_name7"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price7"></span><span id="prod_price7"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart7" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow7" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?8" class="img-prod"><img class="img-fluid" id="prod_img8" alt="Product9">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?8" id="prod_name8"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price8"></span><span id="prod_price8"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart8" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow8" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?9" class="img-prod"><img class="img-fluid" id="prod_img9" alt="Product10">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?9" id="prod_name9"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price9"></span><span id="prod_price9"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart9" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow9" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?10" class="img-prod"><img class="img-fluid" id="prod_img10" alt="Product11">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?10" id="prod_name10"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price10"></span><span id="prod_price10"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart10" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow10" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?11" class="img-prod"><img class="img-fluid" id="prod_img11" alt="Product12">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?11" id="prod_name11"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price11"></span><span id="prod_price11"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart11" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow11" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?12" class="img-prod"><img class="img-fluid" id="prod_img12" alt="Product13">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?12" id="prod_name12"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price12"></span><span id="prod_price12"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart12" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow12" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?13" class="img-prod"><img class="img-fluid" id="prod_img13" alt="Product14">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?13" id="prod_name13"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price13"></span><span id="prod_price13"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart13" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow13" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?14" class="img-prod"><img class="img-fluid" id="prod_img14" alt="Product15">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?14" id="prod_name14"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price14"></span><span id="prod_price14"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart14" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow14" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?15" class="img-prod"><img class="img-fluid" id="prod_img15" alt="Product16">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?15" id="prod_name15"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price15"></span><span id="prod_price15"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart15" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow15" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?16" class="img-prod"><img class="img-fluid" id="prod_img16" alt="Product17">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?16" id="prod_name16"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price16"></span><span id="prod_price16"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart16" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow16" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?17" class="img-prod"><img class="img-fluid" id="prod_img17" alt="Product18">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?17" id="prod_name17"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price17"></span><span id="prod_price17"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart17" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow17" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                <div class="product">
+                  <a href="/shop/product-single?18" class="img-prod"><img class="img-fluid" id="prod_img18" alt="Product19">
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text py-3 pb-4 px-3">
+                    <h3><a href="/shop/product-single?18" id="prod_name18"></a></h3>
+                    <div class="pricing">
+                      <p class="price"><span class="mr-2 price-dc" id="disc_price18"></span><span id="prod_price18"></span></p>
+                    </div>
+                    <p class="bottom-area d-flex px-3">
+                      <a class="add-to-cart text-center py-2 mr-1" id="addcart18" onclick="addcart(this)"><span>Add to cart <ion-icon name="cart" size="small"></ion-icon></span></a>
+                      <a class="buy-now text-center py-2" id="buynow18" onclick="buynow(this)">Rent now<span></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+           <div class="col-md-4 col-lg-2">
+            <div class="sidebar">
+              <div class="sidebar-box-2">
+                <h2 class="heading"></h2>
+                <form method="post" class="colorlib-form-2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-gallery">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+            <h2 class="mb-4">Terms and Conditions</h2>
+            <p id="terms" align="justify"></p>
+          </div>
+    	</div>
+    	</div>
+    </section>
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="mouse">
+            <a href="#" class="mouse-icon">
+              <div class="mouse-wheel"><ion-icon name="ios-arrow-up" size="large"></ion-icon></div>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rent n Build</h2>
+              <p>This is an online shopping site by mixedsignals for renting electronic items at a bargain price.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <a href="https://twitter.com/MexMixed"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+                <a href="https://www.facebook.com/mixedsignalsmec/"><ion-icon name="logo-facebook" size="large"></span></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="shop1.html" class="py-2 d-block">Shop</a></li>
+                <li><a href="about-us.html" class="py-2 d-block">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><a href="https://www.google.com/maps/place/Model+Engineering+College/@10.0273396,76.3274078,17z/data=!4m13!1m7!3m6!1s0x3b080c5a87044b5d:0x1d45e225cbbc660a!2sModel+Engineering+College,+Thrikkakara,+Edappally,+Kochi,+Kerala+682021!3b1!8m2!3d10.0273253!4d76.3295369!3m4!1s0x3b080c5006491601:0xcf23e14245d4694d!8m2!3d10.0283636!4d76.3285124"><ion-icon name="pin" size="large"></ion-icon><span class="text"> Location</span></a></li>
+                  <li><a href="tel:+919496788779"><ion-icon name="call" size="large"></ion-icon><span class="text">Web Admin: +91 94967 88779</span></a></li>
+                  <li><a href="http://mixedsignals.mec.ac.in/"><ion-icon name="mail-open" size="large"></ion-icon><span class="text">mixedsignals@mec.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://mixedsignals.mec.ac.in" target="_blank">Mixed Signals</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <!--<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>-->
+<script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '828283127076-is226se80keesbrh4o0b9t8qdv1prirs.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyCZkvRWzg1xwJ9VKSOw1JT8XsZbLGLgLus';
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets";
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+        //gapi.load('auth2', initClient);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES,
+          cookiepolicy: 'single_host_origin',
+          ux_mode: 'redirect',
+          redirect_uri: 'http://mixedsignals.mec.ac.in/shop1.html'
+          //access_type : "offline"
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          //updateSigninStatus(1);
+          //authorizeButton.onclick = handleAuthClick;
+          //window.onload = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'none';
+          console.log("loggedin");
+          listMajors();
+        } else {
+          //gapi.auth2.getAuthInstance().currentUser.get().reloadAuthResponse();
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'none';
+          //alert("Is not signed in.Please Enable popup and allow all permissions requested.\n\nIf Unverified screen appears click advanced and click go to mec.ac.in(unsafe) button.");
+          gapi.auth2.getAuthInstance().signIn();
+          //listMajors();
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+      	//authorizeButton.style.display = 'block';
+        //gapi.auth2.getAuthInstance().signIn();
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+//var gip=' ';
+      function sheet1add(message)
+      {
+      	var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message ,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [["Name", "Quantity"]]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        console.log(response.result);
+        sheetadd_get(message);
+        //window.gip=message;
+        //sheetadd(window.gip,2,"Arduino Uno","2");
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+        //cartquantity_get(message);
+      });
+      //gip=message;
+      //sheetadd(2,"Arduino Uno","2");
+      }
+      function cartquantity_get(message)
+      {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: message +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+          	 var sum = 0;
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              sum  = sum + parseInt(row[1]);
+              //var id=i+2;
+              //sheetadd_put(message,id,row[0],0);
+            }
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("["+sum +"]");
+              paragraph.appendChild(text);
+              //var paragraph = document.getElementById("cartquantity");
+              //paragraph.textContent = "[0]";
+             //alert('0');
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+          //sheet
+        }, function(response) {
+          console.error('Error: ' + response.result.error.message);
+        });
+      }
+      function appendPre(message) {
+        //var message = json.ip;
+        //var pre=document.getElementById('content');
+        //var textContent = document.createTextNode(message+ '\n');
+        //pre.appendChild(textContent);
+        var params = {
+        // The spreadsheet to apply the updates to.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+        };
+        var batchUpdateSpreadsheetRequestBody = {
+        // A list of updates to apply to the spreadsheet.
+        // Requests will be applied in the order they are specified.
+        // If any request is not valid, no requests will be applied.
+        requests: [{
+               "addSheet": {
+                    // Add properties for the new sheet
+                    "properties": {
+                        // "sheetId": 2,
+                         "title": message ,
+                        // "index": number,
+                        // "sheetType": enum(SheetType),
+                        // "gridProperties": {
+                        //     object(GridProperties)
+                        // },
+                        // "hidden": boolean,
+                        // "tabColor": {
+                        //     object(Color)
+                        // },
+                        // "rightToLeft": boolean
+                    }
+                }
+                }]  // TODO: Update placeholder value.
+
+        // TODO: Add desired properties to the request body.
+      };
+
+      var request = gapi.client.sheets.spreadsheets.batchUpdate(params, batchUpdateSpreadsheetRequestBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        console.log(response.result);
+        //location.reload();
+        //cartquantity_get(message);
+        sheet1add(message);
+      }, function(reason) {
+      	cartquantity_get(message);
+        console.error('error: ' + reason.result.error.message);
+      });
+      }
+      function sheetadd_put(message,id,name,quantity)
+      {
+      	        	var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!A' + id + ":B" + id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [[name,quantity]]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        console.log(response.result);
+        //alert('0');
+        //cartquantity_get(message);
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+      }
+
+        function sheetadd_get(message)
+        {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              var id=i+2;
+              sheetadd_put(message,id,row[0],0);
+            }
+            //alert('01');
+            //cartquantity_get(message);
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("[0]");
+              paragraph.appendChild(text);
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+
+        }
+      function checkquantrem(ip,i)
+      {
+          gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:I',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+              //var aarr = window.location.href.split('?');
+              //var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var rem = parseInt(row[7]) - parseInt('1');
+              if(rem<0)
+                alert("The Quantity chosen is not available.");
+              else
+                addcart_2(ip,i);
+              //var id=parseInt(i)+2;
+              //var val= parseInt(row[1]) + parseInt($('#quantity').val());
+              //checkquantrem(id,val);
+              //sheetadd_put(ip,id,row[0],val);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+      function cartquantity_get_rentnow(message,ele)
+      {
+          gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: message +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+             var sum = 0;
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              sum  = sum + parseInt(row[1]);
+              //var id=i+2;
+              //sheetadd_put(message,id,row[0],0);
+            }
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("["+sum +"]");
+              paragraph.appendChild(text);
+              window.location.href="./shop/cart.html";
+              //var paragraph = document.getElementById("cartquantity");
+              //paragraph.textContent = "[0]";
+             //alert('0');
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+          //sheet
+        }, function(response) {
+          console.error('Error: ' + response.result.error.message);
+        });
+      }
+         function addcart_2_buynow(message,i,ele)
+         {
+          var id = parseInt(i) + 2;
+                  var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!B' + id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [['1']]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        //cartquantity_get(message);
+        //alert('Added to cart');
+        var paragraph = document.getElementById("cartquantity");
+        paragraph.removeChild(paragraph.childNodes[1]);
+        cartquantity_get_rentnow(message,ele);
+        console.log(response.result);
+        //cartquantity_get(message);
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+         }
+      function checkquantrem_buynow(ip,i,ele)
+      {
+          gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:I',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+              //var aarr = window.location.href.split('?');
+              //var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var rem = parseInt(row[7]) - parseInt('1');
+              if(rem<0)
+                alert("The Quantity chosen is not available.");
+              else
+                addcart_2_buynow(ip,i,ele);
+
+              //var id=parseInt(i)+2;
+              //var val= parseInt(row[1]) + parseInt($('#quantity').val());
+              //checkquantrem(id,val);
+              //sheetadd_put(ip,id,row[0],val);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+         function addcart_2(message,i)
+         {
+          var id = parseInt(i) + 2;
+                  var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!B' + id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [['1']]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        //cartquantity_get(message);
+        alert('Added to cart');
+        var paragraph = document.getElementById("cartquantity");
+        paragraph.removeChild(paragraph.childNodes[1]);
+        cartquantity_get(message);
+        console.log(response.result);
+        //cartquantity_get(message);
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+         }
+         function addcart(ele)
+         {
+          var cartid=ele.id;
+          var i = cartid.split("t");
+          var id = i[1];
+          var timestamp = sessionStorage.getItem("timestamp");
+          checkquantrem(timestamp,id);
+          //$('.notifyjs-corner').empty();
+          //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+          //  checkquantrem(response.ip,id);
+           //}, "jsonp");
+         //var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => checkquantrem(ip,id)).catch(e => console.error(e))
+         }
+         function buynow(ele)
+         {
+          var cartid=ele.id;
+          var i = cartid.split("w");
+          var id = i[1];
+          var timestamp = sessionStorage.getItem("timestamp");
+          checkquantrem_buynow(timestamp,id,ele);
+          //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+          //  checkquantrem_buynow(response.ip,id,ele);
+          // }, "jsonp");
+         //var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => checkquantrem_buynow(ip,id,ele)).catch(e => console.error(e))
+         //document.getElementById(ele.id).href="./shop/cart.html";
+         }
+         function listMajors() {
+           console.log("Working....");
+           var timestamp = sessionStorage.getItem("timestamp");
+           if(timestamp == null)
+           {
+            timestamp = Date.now().toString();
+            sessionStorage.setItem("timestamp", timestamp );
+            appendPre(timestamp);
+           }
+           else
+           {
+           	appendPre(timestamp);
+           }
+           //$.notify("Working" , {globalPosition:"top center" , className: 'info',autoHide: false});
+            //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+           //    appendPre(response.ip);
+           //}, "jsonp");
+           //appendPre("abc");
+         //var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => appendPre(ip)).catch(e => console.error(e))
+/*        $.getJSON("https://jsonip.com?callback=?", function(data) {
+        	alert("Your IP address is :- " + data.ip);
+        	console.log(data.ip);
+        	appendPre(data.ip);
+      });*/
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:J',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              var a = document.getElementById('prod_name'+ i );
+              var textContent = document.createTextNode(row[0]+ '\n');
+              a.appendChild(textContent);
+              var a = document.getElementById('prod_price'+ i );
+              var textContent = document.createTextNode('Rs ' + row[6] + '\n');
+              a.appendChild(textContent);
+              var a = document.getElementById('disc_price'+ i );
+              var textContent = document.createTextNode('Rs ' + row[2] + '\n');
+              a.appendChild(textContent);
+              document.getElementById('prod_img'+ i ).src = row[4];
+
+              if(i==0)
+              {
+              	document.getElementById('intro').innerHTML= row[9];
+              	document.getElementById('terms').innerHTML= row[8];
+              }
+              //var id = i+2;
+              //sheetadd(window.gip,id,row[0],row[1]);
+            }
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+          //$.notify(className: 'info').hide();
+        });
+             //sheet1add(ip);
+}
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+
+    </script>
+  <script src="js_shop/jquery.min.js"></script>
+  <script src="js_shop/jquery-migrate-3.0.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js_shop/popper.min.js"></script>
+  <script src="js_shop/bootstrap.min.js"></script>
+  <script src="js_shop/jquery.easing.1.3.js"></script>
+  <script src="js_shop/jquery.waypoints.min.js"></script>
+  <script src="js_shop/jquery.stellar.min.js"></script>
+  <script src="js_shop/notify.min.js"></script>
+  <script src="js_shop/owl.carousel.min.js"></script>
+  <script src="js_shop/jquery.magnific-popup.min.js"></script>
+  <script src="js_shop/aos.js"></script>
+  <script src="js_shop/jquery.animateNumber.min.js"></script>
+  <script src="js_shop/bootstrap-datepicker.js"></script>
+  <script src="js_shop/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js_shop/google-map.js"></script>
+  <script src="js_shop/main.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  </body>
+</html>
