@@ -1,0 +1,8 @@
+.htaccess
+.mysql_history
+.node_repl_history
+.npmrc
+.rnd
+.Xauthority
+.bash_history
+/letsencrypt

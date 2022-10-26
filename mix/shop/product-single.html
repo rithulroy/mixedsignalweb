@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rent n Build</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css_shop/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css_shop/css/animate.css">
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css_shop/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css_shop/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css_shop/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../css_shop/css/aos.css">
+
+    <link rel="stylesheet" href="../css_shop/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../css_shop/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css_shop/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="../css_shop/css/flaticon.css">
+    <link rel="stylesheet" href="../css_shop/css/icomoon.css">
+    <link rel="stylesheet" href="../css_shop/css/style.css">
+  </head>
+ <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+  <body class="goto-here">
+      <div class="py-1 bg-black">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="phone-portrait"></ion-icon></div>
+                <span class="text">Web Admin: +91 94967 88779</span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><ion-icon name="mail"></ion-icon></div>
+                <span class="text">mixedsignals.mec.in@gmail.com</span>
+              </div>
+              <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                <span class="text">Delivery at college only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../shop1.html">Rent n Build</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Site Home</a></li>
+            <li class="nav-item"><a href="../shop1.html" class="nav-link">Shop Home</a></li>
+           <!-- <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="">Shop</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>-->
+            <li class="nav-item"><a href="../about-us.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="https://github.com/KurienEapen/MixedSignals_Shop/blob/master/README.md" class="nav-link">How to use?</a></li>
+            <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link" id="cartquantity"><ion-icon name="cart"></ion-icon></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('../img/bg.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<!--<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Shop</span></p>
+            <h1 class="mb-0 bread">Shop</h1>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6 mb-5 ftco-animate">
+    				<a  class="image-popup prod-img-bg" id="prod_imghref"><img class="img-fluid" id="prod_img" alt="productimage"></a>
+    			</div>
+    			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
+    				<h3 id="prod_name"></h3>
+    				<!--<div class="rating d-flex">
+							<p class="text-left mr-4">
+								<a href="#" class="mr-2">5.0</a>
+								<a href="#"><span class="ion-ios-star-outline"></span></a>
+								<a href="#"><span class="ion-ios-star-outline"></span></a>
+								<a href="#"><span class="ion-ios-star-outline"></span></a>
+								<a href="#"><span class="ion-ios-star-outline"></span></a>
+								<a href="#"><span class="ion-ios-star-outline"></span></a>
+							</p>
+							<p class="text-left mr-4">
+								<a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Rating</span></a>
+							</p>
+							<p class="text-left">
+								<a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>
+							</p>
+						</div>-->
+    				<p class="price"><span id="prod_price"></span></p>
+    				<p id="prod_des"></p>
+						<div class="row mt-4">
+							<div class="col-md-6">
+								<div class="form-group d-flex">
+		              <div class="select-wrap">
+	                  <!--<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                  <select name="" id="" class="form-control">
+	                  	<option value="">Small</option>
+	                    <option value="">Medium</option>
+	                    <option value="">Large</option>
+	                    <option value="">Extra Large</option>
+	                  </select>-->
+	                </div>
+		            </div>
+							</div>
+							<div class="w-100"></div>
+							<div class="input-group col-md-6 d-flex mb-3">
+	             	<span class="input-group-btn mr-2">
+	                	<button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">
+	                   <ion-icon name="remove"></ion-icon>	                	</button>
+	            		</span>
+	             	<input type="text" id="quantity" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+	             	<span class="input-group-btn ml-2">
+	                	<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+	                     <ion-icon name="add"></ion-icon>
+	                 </button>
+	             	</span>
+	          	</div>
+	          	<div class="w-100"></div>
+	          	<div class="col-md-12">
+	          		<p style="color: #000;" id="quantityrem">0 quantity remaining</p>
+	          	</div>
+          	</div>
+          	<p><a class="btn btn-black py-3 px-5 mr-2" id="addcart">Add to Cart</a><a onclick="rent()" class="btn btn-primary py-3 px-5" id="rentnow">Rent now</a></p>
+    			</div>
+    		</div>
+
+
+
+
+    		<div class="row mt-5">
+          <p id="prod_des" align="justify"></p>
+          <!--<div class="col-md-12 nav-link-wrap">
+            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link ftco-animate active mr-lg-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false"></a>
+
+              <a class="nav-link ftco-animate mr-lg-1" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="true">Description</a>
+
+              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false"></a>
+
+            </div>
+          </div>
+          <div class="col-md-12 tab-wrap">
+
+            <div class="tab-content bg-light" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active" id="v-pills-2" role="tabpanel" aria-labelledby="day-1-tab">
+              	<div class="p-4">
+	              	<h3 class="mb-4">Nike Free RN 2019 iD</h3>
+	              	<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn�t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+              	</div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+              	<div class="p-4">
+	              	<h3 class="mb-4">Manufactured By Nike</h3>
+	              	<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn�t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+              	</div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+              	<div class="row p-4">
+						   		<div class="col-md-7">
+						   			<h3 class="mb-4">23 Reviews</h3>
+						   			<div class="review">
+								   		<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+								   		<div class="desc">
+								   			<h4>
+								   				<span class="text-left">Jacob Webb</span>
+								   				<span class="text-right">14 March 2018</span>
+								   			</h4>
+								   			<p class="star">
+								   				<span>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+							   					</span>
+							   					<span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
+								   			</p>
+								   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
+								   		</div>
+								   	</div>
+								   	<div class="review">
+								   		<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+								   		<div class="desc">
+								   			<h4>
+								   				<span class="text-left">Jacob Webb</span>
+								   				<span class="text-right">14 March 2018</span>
+								   			</h4>
+								   			<p class="star">
+								   				<span>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+							   					</span>
+							   					<span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
+								   			</p>
+								   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
+								   		</div>
+								   	</div>
+								   	<div class="review">
+								   		<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+								   		<div class="desc">
+								   			<h4>
+								   				<span class="text-left">Jacob Webb</span>
+								   				<span class="text-right">14 March 2018</span>
+								   			</h4>
+								   			<p class="star">
+								   				<span>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+								   					<i class="ion-ios-star-outline"></i>
+							   					</span>
+							   					<span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
+								   			</p>
+								   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
+								   		</div>
+								   	</div>
+						   		</div>
+						   		<div class="col-md-4">
+						   			<div class="rating-wrap">
+							   			<h3 class="mb-4">Give a Review</h3>
+							   			<p class="star">
+							   				<span>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					(98%)
+						   					</span>
+						   					<span>20 Reviews</span>
+							   			</p>
+							   			<p class="star">
+							   				<span>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					(85%)
+						   					</span>
+						   					<span>10 Reviews</span>
+							   			</p>
+							   			<p class="star">
+							   				<span>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					(98%)
+						   					</span>
+						   					<span>5 Reviews</span>
+							   			</p>
+							   			<p class="star">
+							   				<span>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					(98%)
+						   					</span>
+						   					<span>0 Reviews</span>
+							   			</p>
+							   			<p class="star">
+							   				<span>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					<i class="ion-ios-star-outline"></i>
+							   					(98%)
+						   					</span>
+						   					<span>0 Reviews</span>
+							   			</p>
+							   		</div>
+						   		</div>
+						   	</div>
+              </div>-->
+          </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="mouse">
+            <a href="#" class="mouse-icon">
+              <div class="mouse-wheel"><ion-icon name="ios-arrow-up" size="large"></ion-icon></div>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rent n Build</h2>
+              <p>This is an online shopping site by mixedsignals for renting electronic items at a bargain price.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <a href="https://twitter.com/MexMixed"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+                <a href="https://www.facebook.com/mixedsignalsmec/"><ion-icon name="logo-facebook" size="large"></span></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="shop1.html" class="py-2 d-block">Shop</a></li>
+                <li><a href="about-us.html" class="py-2 d-block">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><a href="https://www.google.com/maps/place/Model+Engineering+College/@10.0273396,76.3274078,17z/data=!4m13!1m7!3m6!1s0x3b080c5a87044b5d:0x1d45e225cbbc660a!2sModel+Engineering+College,+Thrikkakara,+Edappally,+Kochi,+Kerala+682021!3b1!8m2!3d10.0273253!4d76.3295369!3m4!1s0x3b080c5006491601:0xcf23e14245d4694d!8m2!3d10.0283636!4d76.3285124"><ion-icon name="pin" size="large"></ion-icon><span class="text"> Location</span></a></li>
+                  <li><a href="tel:+919496788779"><ion-icon name="call" size="large"></ion-icon><span class="text">Web Admin: +91 94967 88779</span></a></li>
+                  <li><a href="http://mixedsignals.mec.ac.in/"><ion-icon name="mail-open" size="large"></ion-icon><span class="text">mixedsignals@mec.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://mixedsignals.mec.ac.in" target="_blank">Mixed Signals</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '828283127076-is226se80keesbrh4o0b9t8qdv1prirs.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyCZkvRWzg1xwJ9VKSOw1JT8XsZbLGLgLus';
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(1);
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'none';
+          listMajors();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+      function cartquantity_get(message)
+      {
+      	//alert("reachedhere");
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: message +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+          	 var sum = 0;
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              sum  = sum + parseInt(row[1]);
+              //var id=i+2;
+              //sheetadd_put(message,id,row[0],0);
+            }
+              //alert(ip);
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("["+sum +"]");
+              paragraph.appendChild(text);
+              //var paragraph = document.getElementById("cartquantity");
+              //paragraph.textContent = "[0]";
+             //alert('0');
+          } else {
+            //alert("else");
+            //appendPre('No data found.');
+          }
+          //location.reload();
+          //sheet
+        }, function(response) {
+          console.error('Error: ' + response.result.error.message);
+        });
+      }
+      function sheetadd_put(message,id,name,quantity)
+      {
+        //cartquantity_get(message);
+      	        	var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!A' + id + ":B" + id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [[name,quantity]]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        //cartquantity_get(message);
+        alert('Added to cart');
+        console.log(response.result);
+        var paragraph = document.getElementById("cartquantity");
+        paragraph.removeChild(paragraph.childNodes[1]);
+        cartquantity_get(message);
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+      }
+      function checkquantrem(i,val,ip,id,name)
+      {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:I',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+           	  //var aarr = window.location.href.split('?');
+              //var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var rem = parseInt(row[7]) - parseInt(val);
+              if(rem<0)
+              	alert("The Quantity chosen is not available.");
+              else
+                sheetadd_put(ip,id,name,val);
+              //var id=parseInt(i)+2;
+              //var val= parseInt(row[1]) + parseInt($('#quantity').val());
+              //checkquantrem(id,val);
+              //sheetadd_put(ip,id,row[0],val);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+      function sheetadd_get(ip)
+      {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: ip +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+           	  var aarr = window.location.href.split('?');
+              var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var id=parseInt(i)+2;
+              var val= parseInt(row[1]) + parseInt($('#quantity').val());
+              checkquantrem(i,val,ip,id,row[0]);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+        function addcart()
+        {
+         var timestamp =sessionStorage.getItem("timestamp");
+         sheetadd_get(timestamp);
+         //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+         // sheetadd_get(response.ip);
+         //}, "jsonp");
+//var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => sheetadd_get(ip)).catch(e => console.error(e))
+
+        }
+      function rent_cartquantity_get(message)
+      {
+      	//alert("reachedhere");
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: message +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+          	 var sum = 0;
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              sum  = sum + parseInt(row[1]);
+              //var id=i+2;
+              //sheetadd_put(message,id,row[0],0);
+            }
+              //alert(ip);
+              var paragraph = document.getElementById("cartquantity");
+              var text = document.createTextNode("["+sum +"]");
+              paragraph.appendChild(text);
+              window.location.href = "./cart.html"
+              //var paragraph = document.getElementById("cartquantity");
+              //paragraph.textContent = "[0]";
+             //alert('0');
+          } else {
+            //alert("else");
+            //appendPre('No data found.');
+          }
+          //location.reload();
+          //sheet
+        }, function(response) {
+          console.error('Error: ' + response.result.error.message);
+        });
+      }
+      function rent_sheetadd_put(message,id,name,quantity)
+      {
+        //cartquantity_get(message);
+      	        	var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to update.
+        range: message + '!A' + id + ":B" + id,  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+      };
+
+      var valueRangeBody = {
+        // TODO: Add desired properties to the request body. All existing properties
+        // will be replaced.
+        "values" : [[name,quantity]]
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
+      request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        //listMajors();
+        //cartquantity_get(message);
+        //alert('Added to cart');
+        console.log(response.result);
+        var paragraph = document.getElementById("cartquantity");
+        paragraph.removeChild(paragraph.childNodes[1]);
+        rent_cartquantity_get(message);
+        //document.getElementById("rentnow").href = "cart.html"
+        //location.reload();
+      }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      });
+      }
+      function rent_checkquantrem(i,val,ip,id,name)
+      {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:I',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+           	  //var aarr = window.location.href.split('?');
+              //var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var rem = parseInt(row[7]) - parseInt(val);
+              if(rem<0)
+              	alert("The Quantity chosen is not available.");
+              else
+                rent_sheetadd_put(ip,id,name,val);
+              //var id=parseInt(i)+2;
+              //var val= parseInt(row[1]) + parseInt($('#quantity').val());
+              //checkquantrem(id,val);
+              //sheetadd_put(ip,id,row[0],val);
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+      }
+        function rent_quantcheck(ip)
+        {
+        	gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: ip +'!A2:G',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+           // for (i = 0; i < range.values.length; i++) {
+           	  var aarr = window.location.href.split('?');
+              var i = aarr[aarr.length -1];
+              var row = range.values[i];
+              var id=parseInt(i)+2;
+              var val= parseInt(row[1]) + parseInt('1');
+              rent_checkquantrem(i,val,ip,id,row[0]);
+              //window.location.href = "./cart.html"
+            //}
+          } else {
+            //appendPre('No data found.');
+          }
+          //location.reload();
+        }, function(response) {
+          //appendPre('Error: ' + response.result.error.message);
+        });
+        }
+        function rent()
+        {
+         var timestamp =sessionStorage.getItem("timestamp");
+         rent_quantcheck(timestamp);
+         //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+         // rent_quantcheck(response.ip);
+         //}, "jsonp");
+//var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => rent_quantcheck(ip)).catch(e => console.error(e))
+          //document.getElementById("rentnow").href = "cart.html"
+          //window.location.href = "./cart.html"
+        }
+         function listMajors() {
+         	var timestamp =sessionStorage.getItem("timestamp");
+         	cartquantity_get(timestamp);
+         	//console.log(timestamp);
+         //$.get("https://api.ipify.org?format=jsonp&callback=?", function(response) {
+         // cartquantity_get(response.ip);
+         //}, "jsonp");
+         //var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+              //findIP.then(ip => cartquantity_get(ip)).catch(e => console.error(e))
+         document.getElementById('addcart').onclick = addcart;
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1spWSrIWkejVr2k54jEuu6NzudbIK2KedWvvsxQ-DGUA',
+          range: 'Sheet1!A2:I',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            var aarr = window.location.href.split('?');
+            var id = aarr[aarr.length -1];
+            //for (i = 0; i < range.values.length; i++) {
+              var row = range.values[id];
+              var a = document.getElementById('prod_name');
+              var textContent = document.createTextNode(row[0]+ '\n');
+              a.appendChild(textContent);
+              var a = document.getElementById('prod_price');
+              var textContent = document.createTextNode('Rs ' + row[6] + '\n');
+              a.appendChild(textContent);
+              document.getElementById('prod_img').src = row[4];
+              document.getElementById('prod_imghref').href = row[4];
+              // var a = document.getElementById('prod_des');
+              // var textContent = document.createTextNode(row[5]+ '\n');
+              // a.appendChild(textContent);
+              document.getElementById('prod_des').innerHTML= row[5];
+              var a = document.getElementById('quantityrem');
+              //var textContent = document.createTextNode(row[7] + " quantity remaining");
+              a.innerHTML=row[7] + " quantity remaining";
+              //document.getElementById('rentnow').onclick =  function () {document.getElementById('rentnow').href = './cart.html?' + id + '?' + parseInt($('#quantity').val());};
+            //}
+          } else {
+            appendPre('No data found.');
+          }
+        }, function(response) {
+          appendPre('Error: ' + response.result.error.message);
+        });
+      }
+
+    </script>
+
+
+  <script src="../js_shop/jquery.min.js"></script>
+  <script src="../js_shop/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js_shop/popper.min.js"></script>
+  <script src="../js_shop/bootstrap.min.js"></script>
+  <script src="../js_shop/jquery.easing.1.3.js"></script>
+  <script src="../js_shop/jquery.waypoints.min.js"></script>
+  <script src="../js_shop/jquery.stellar.min.js"></script>
+  <script src="../js_shop/owl.carousel.min.js"></script>
+  <script src="../js_shop/jquery.magnific-popup.min.js"></script>
+  <script src="../js_shop/aos.js"></script>
+  <script src="../js_shop/jquery.animateNumber.min.js"></script>
+  <script src="../js_shop/bootstrap-datepicker.js"></script>
+  <script src="../js_shop/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="../js_shop/google-map.js"></script>
+  <script src="../js_shop/main.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  <script>
+		$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            $('#quantity').val(quantity + 1);
+
+
+		            // Increment
+
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            // Increment
+		            if(quantity>1){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+
+		});
+	</script>
+
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php
+//header("Expires: Sat, 26 Jul 2020 05:00:00 GMT");
+//header("Cache-Control: max-age=2592000");
+$tsstring = gmdate('D, d M Y H:i:s ', $timestamp) . 'GMT';
+$etag = $language . $timestamp;
+
+$if_modified_since = isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) ? $_SERVER['HTTP_IF_MODIFIED_SINCE'] : false;
+$if_none_match = isset($_SERVER['HTTP_IF_NONE_MATCH']) ? $_SERVER['HTTP_IF_NONE_MATCH'] : false;
+if ((($if_none_match && $if_none_match == $etag) || (!$if_none_match)) &&
+    ($if_modified_since && $if_modified_since == $tsstring))
+{
+    header('HTTP/1.1 304 Not Modified');
+    exit();
+}
+else
+{
+    header("Last-Modified: $tsstring");
+    header("ETag: \"{$etag}\"");
+}
+?>
+<head>
+  <meta charset="utf-8">
+  <title>Mixed Signals</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+   <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Tauri:400">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css?v1.1" rel="stylesheet">
+  <link rel="stylesheet" href="css/homepage.css" media="screen">
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+       <!-- <h1><a href="#intro" class="scrollto">Avilon</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="../"><img src="img/logo2.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+         <li class="inactive"><a href="events.html">Events</a></li>
+		  <li class="inactive"><a href="terminal.html">Terminal</a></li>
+          <li class="inactive"><a href="about-us.html">About Us</a></li>
+          <li class="inactive"><a href="gallery.html">Gallery</a></li>
+          <li><a href="shop1.html">Rent n Build</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" topmargin="200px">
+
+
+    <div class="intro-text" topmargin="300px">
+     <h2 class="homeheading">Home</h2>
+      <a href="#about" class="btn-get-started scrollto">Scroll Down</a>
+    </div>
+
+
+  </section>
+  <!-- #about -->
+    <section class="u-align-center u-clearfix u-palette-1-base u-section-1 u-body" id="about">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-expanded-width-xs u-opacity u-opacity-45 u-palette-1-light-1 u-shape u-shape-circle u-shape-1"></div>
+          <h2 class="u-custom-font u-text u-text-1">MEC<br>
+          </h2>
+          <p class="u-text u-text-2">Govt. Model Engineering College, Thrikkakara is a premier institute that has made it to the pinnacle of the engineering arena in a span of just 20 years under the guidance IHRD. The college has witnessed record-breaking placements channeled through dynamic corporate scenarios. MEC was featured the 28th among   the top 50 Government Engineering Colleges in India. Our vision is to evolve into an academy of excellence to serve the emerging knowledge-based society. Unique in its structure, methods and goals, the college is strongly rooted in a philosophy of training and research that emphasizes the intimate relationships between knowledge and its application and seeks to promote the creation of an ideal society. Our mission is to mould engineers in the field of information and technology to bridge the digital divide.  </p>
+          <a href="http://mec.ac.in/" class="u-active-palette-1-light-3 u-btn u-btn-round u-button-style u-hover-palette-2-base u-palette-1-base u-radius-50   u-btn-1">official website of mec</a>
+        </div>
+      </section>
+      <section class="u-align-center u-clearfix u-palette-1-base u-section-2 u-body" id="carousel_203b">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-shape u-shape-svg u-text-white u-shape-1">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0a30"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-0a30"><path d="M114.3,152.3l38-38C144.4,130.9,130.9,144.4,114.3,152.3z M117.1,9.1l-108,108c0.8,1.6,1.7,3.2,2.7,4.8l110-110
+  	C120.3,10.9,118.7,10,117.1,9.1z M97.5,2L2,97.5c0.4,2,1,4,1.5,5.9l99.9-99.9C101.5,2.9,99.5,2.4,97.5,2z M80,160c2,0,4-0.1,5.9-0.2
+  	l73.9-73.9c0.1-2,0.2-3.9,0.2-5.9c0-0.6,0-1.2,0-1.9L78.1,160C78.8,160,79.4,160,80,160z M34.9,146.1c1.5,1,3,2,4.6,2.9L149,39.5
+  	c-0.9-1.6-1.9-3.1-2.9-4.6L34.9,146.1z M132.7,19.8L19.8,132.7c1.2,1.3,2.3,2.6,3.6,3.9L136.6,23.4C135.3,22.2,134,21,132.7,19.8z
+  	 M59.6,157.4l97.8-97.8c-0.5-1.9-1.1-3.8-1.7-5.7L53.9,155.6C55.8,156.3,57.7,156.9,59.6,157.4z M7.6,45.9L45.9,7.6
+  	C29.1,15.5,15.5,29.1,7.6,45.9z M80,0c-2.6,0-5.1,0.1-7.6,0.4l-72,72C0.1,74.9,0,77.4,0,80c0,0.1,0,0.2,0,0.2L80.2,0
+  	C80.2,0,80.1,0,80,0z"></path></svg>
+          </div>
+          <div class="u-shape u-shape-svg u-text-palette-2-base u-shape-2">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-afd0"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-afd0" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+  	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
+          </div>
+          <div class="u-clearfix u-expanded-width-xl u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout"  style="">
+              <div class="u-layout-row" style="">
+                <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="900" data-image-height="885" style="background-image: url(images/dsdsd-min.jpg);">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
+                </div>
+                <div class="u-align-left u-container-style u-layout-cell u-right-cell u-shape-rectangle u-size-30 u-size-xs-60 u-white u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2">
+                    <h1 class="u-text u-title u-text-1">Mixed Signals</h1>
+                    <p class="u-text u-text-2">  Mixed Signals is the Electronics Association of Govt. Model Engineering College, Kochi. This group is an endeavor of the students of Electronics and Communication Department. Mixed Signals aims at providing a platform for the students to learn, experiment and innovate thus transforming into better Engineers.   Various workshops, lectures, competitions are organized by the association as part of its mission to empower students with the latest cutting edge technologies. Our main activities include workshops, events, projects etc. Our main aim is to help students understand electronic concepts and foster an interest in them for circuits and design by holding various competitions and talk shows. We offer help in various projects by conducting workshops which include Raspberry Pi, PIC, etc. Mixed Signals is a club for electronic maniacs and enthusiasts. It’s a learning opportunity for all MEC students.
+                </p>
+                    <a href="http://mixedsignals.mec.ac.in/about-us.html" class="u-btn u-btn-round u-button-style u-hover-palette-2-base u-palette-1-base u-radius-50 u-btn-2">learn more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <br><br><br>
+      </section>
+
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-6 col-md-4">
+            <div class="contact-about">
+              <h3>Follow Us</h3>
+              <p>Follow Mixed Signals MEC on social media</p>
+              <div class="social-links">
+                <a href="https://twitter.com/MexMixed" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/mixedsignalsmec/" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://youtu.be/ktEWRkjLhDk" class="youtube"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/mixed-signals-mec/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <h2>Location </h2>
+                <p ><a href="https://www.google.com/maps/place/Model+Engineering+College/@10.0273396,76.3274078,17z/data=!4m13!1m7!3m6!1s0x3b080c5a87044b5d:0x1d45e225cbbc660a!2sModel+Engineering+College,+Thrikkakara,+Edappally,+Kochi,+Kerala+682021!3b1!8m2!3d10.0273253!4d76.3295369!3m4!1s0x3b080c5006491601:0xcf23e14245d4694d!8m2!3d10.0283636!4d76.3285124" target="_blank" style="color: #1dc8cd;">Model Engineering College<br>Thrikkakara, Kochi 682021</a></p>              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <h2>Contact </h2>
+                 <p>Helna Saju: <a href="tel:+91 9496277832" style="color: #1dc8cd;">+91 9496277832</a><br>Anitha Mohan: <a href="tel:+91 9048892960" style="color: #1dc8cd;">+91 9048892960</a></p>
+                <p class="mob-copyright" style="font-size: 10px;">&copy; Copyright <strong>Mixed Signals 2019</strong>. All Rights Reserved</p>
+
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Mixed Signals 2018</strong>. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
+
+</body>
+</html>

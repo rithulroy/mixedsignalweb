@@ -1,0 +1,27 @@
+nohup: ignoring input
+/var/www/mixedsignals/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
+
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/var/www/mixedsignals/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/var/www/mixedsignals/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/mixedsignals/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/var/www/mixedsignals/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/var/www/mixedsignals/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/var/www/mixedsignals/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/var/www/mixedsignals/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/var/www/mixedsignals/node_modules/mysql/lib/Connection.js:525:10)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    --------------------
+    at Protocol._enqueue (/var/www/mixedsignals/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/var/www/mixedsignals/node_modules/mysql/lib/Connection.js:201:25)
+    at /var/www/mixedsignals/test.js:30:12
+    at Layer.handle [as handle_request] (/var/www/mixedsignals/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/mixedsignals/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/mixedsignals/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/mixedsignals/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/mixedsignals/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/mixedsignals/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/mixedsignals/node_modules/express/lib/router/index.js:275:10)
